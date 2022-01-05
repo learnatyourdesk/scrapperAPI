@@ -1,0 +1,1 @@
+curl -s "http://api.scraperapi.com?api_key=77a7c9b12502b8f56f1cc0d112e779de&url=https://finance.yahoo.com/quote/ASIANPAINT.NS/" | grep Lead-2-FinanceHeaderDone | awk -F"value" '{print $2}'| awk -F'"|"' '{print $2 }'
